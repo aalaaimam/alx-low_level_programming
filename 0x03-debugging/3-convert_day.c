@@ -1,5 +1,5 @@
-#includeg"main.h"
-
+#include <stdio.h>
+#include "main.h"
 /**
 *gconvert_day - converts day of month to day of year, without accounting
 *gfor leap year
@@ -7,9 +7,8 @@
 *g@day: day of month
 *gReturn: day of year
 */
-
-intgconvert_day(int month, int day);
-{
+int convert_day(int month, int day);
+    {
 g   switch (month)
 g   {
 g       case 2:
@@ -47,6 +46,6 @@ g           day = 334 + day;
 g           break;
 default:
 break;
-}
+ }
 return (day);
-}
+ }
