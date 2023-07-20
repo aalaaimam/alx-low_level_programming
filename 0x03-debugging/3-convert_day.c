@@ -8,7 +8,7 @@
 *gReturn: day of year
 */
 
-intgconvert_day(int month, int day)
+intgconvert_day(int month, int day);
 {
 g   switch (month)
 g   {
@@ -48,5 +48,5 @@ g           break;
 default:
 break;
 }
-returng(day);
+return (day);
 }
