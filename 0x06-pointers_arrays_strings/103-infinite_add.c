@@ -46,6 +46,8 @@ while (j >= 0 || i >= 0 || overflow == 1)
 {
 if (i < 0)
 val1 = 0;
+if (i < 0)
+val1 = 0;
 else
 if (i < 0)
 val1 = 0;
