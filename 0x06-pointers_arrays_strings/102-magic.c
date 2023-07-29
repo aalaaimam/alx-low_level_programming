@@ -1,4 +1,5 @@
 #include <stdio.h>
+/* This program demonstrates pointer arithmetic in C */
 int main(void)
 {
 int n;
