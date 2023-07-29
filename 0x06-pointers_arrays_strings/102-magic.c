@@ -1,5 +1,9 @@
 #include <stdio.h>
-/* This program demonstrates pointer arithmetic in C */
+/**
+ * main - Entry point for the program
+ *
+ * Return: 0 on success
+ */
 int main(void)
 {
 int n;
@@ -7,16 +11,9 @@ int a[5];
 int *p;
 a[2] = 1024;
 p = &n;
- /*
- * write your line of code here...
- * Remember:
- * - you are not allowed to use a
- * - you are not allowed to modify p
- * - only one statement
- * - you are not allowed to code anything else than this line of code
- */
-*(p + 5) = 98; /* add 5 to the address to modify the next integer value */
-/* ...so that this prints 98\n */
+/* Update integer value 5 places after the memory location of n to 98 */
+*((int *)((char *)p + 5 * sizeof(int))) = 98;
+/* Print value of a[2] (should be 98) */
 printf("a[2] = %d\n", a[2]);
-return (0); /* parentheses added around return value */
+return (0);
 }
