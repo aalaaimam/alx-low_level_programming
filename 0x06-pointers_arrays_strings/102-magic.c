@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+/* This function is the entry point of the program */
 int main(void)
 {
  int n;
@@ -12,4 +12,3 @@ int main(void)
  printf("%d\n", *(p + 5)); /* Modify this line to print 98 */
  return (0);
 }
-
