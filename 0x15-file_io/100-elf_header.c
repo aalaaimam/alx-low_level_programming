@@ -63,7 +63,7 @@ printf(" ");
 }
 }
 
-// Other function definitions...
+/* Other function definitions... */
 
 /**
 * main - Displays the information contained in the
@@ -106,7 +106,7 @@ exit(98);
 check_elf(header->e_ident);
 printf("ELF Header:\n");
 print_magic(header->e_ident);
-// Call other print functions...
+/* Call other print functions... */
 free(header);
 close_elf(o);
 return (0);
