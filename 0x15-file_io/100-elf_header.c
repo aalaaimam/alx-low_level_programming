@@ -64,6 +64,21 @@ printf(" ");
 }
 
 /* Other function definitions... */
+/**
+* close_elf - Closes the ELF file descriptor.
+* @elf: The file descriptor of the ELF file.
+*
+* Description: Closes the file descriptor of the ELF file. If an error occurs,
+*              it prints an error message and exits with code 98.
+*/
+void close_elf(int elf)
+{
+if (close(elf) == -1)
+{
+dprintf(STDERR_FILENO, "Error: Can't close file descriptor\n");
+exit(98);
+}
+}
 
 /**
 * main - Displays the information contained in the
