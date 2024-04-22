@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# Check current directory content
-ls -la
+# Load the libhack.so library using LD_PRELOAD
+export LD_PRELOAD=./libhack.so
 
-# Run the command to win the Giga Millions
+# Execute the gm program with the specified numbers
 ./gm 9 8 10 24 75 9
