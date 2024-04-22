@@ -8,7 +8,7 @@ fi
 done
 
 # Create the dynamic library
-gcc -shared -o liball.so *.o
+gcc -shared *.o -o liball.so
 
 # Clean up the object files
 rm *.o
