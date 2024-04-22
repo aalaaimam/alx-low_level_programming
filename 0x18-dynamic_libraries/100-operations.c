@@ -1,27 +1,60 @@
-// 100-operations.c
+#include "100-operations.h"
 
-int add(int a, int b) {
-return a + b;
-}
-
-int sub(int a, int b) {
-return a - b;
-}
-
-int mul(int a, int b) {
-return a * b;
-}
-
-int div(int a, int b) {
-if (b == 0) {
-return 0; // handle division by zero
-}
-return a / b;
+/**
+* add - Adds two integers.
+* @a: The first integer.
+* @b: The second integer.
+* Return: The result of the addition.
+*/
+int add(int a, int b)
+{
+return (a + b);
 }
 
-int mod(int a, int b) {
-if (b == 0) {
-return 0; // handle division by zero
+/**
+* sub - Subtracts two integers.
+* @a: The first integer.
+* @b: The second integer.
+* Return: The result of the subtraction.
+*/
+int sub(int a, int b)
+{
+return (a - b);
 }
-return a % b;
+
+/**
+* mul - Multiplies two integers.
+* @a: The first integer.
+* @b: The second integer.
+* Return: The result of the multiplication.
+*/
+int mul(int a, int b)
+{
+return (a * b);
+}
+
+/**
+* div - Divides two integers.
+* @a: The first integer.
+* @b: The second integer.
+* Return: The result of the division.
+*/
+int div(int a, int b)
+{
+if (b == 0)
+return 0; // Error: division by zero
+return (a / b);
+}
+
+/**
+* mod - Computes the remainder of division of two integers.
+* @a: The first integer.
+* @b: The second integer.
+* Return: The remainder of the division.
+*/
+int mod(int a, int b)
+{
+if (b == 0)
+return 0; // Error: division by zero
+return (a % b);
 }
