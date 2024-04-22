@@ -1,7 +1,14 @@
 import random
 import ctypes
+import os
 
-cops = ctypes.CDLL('./100-operations.so')
+# Get the full path to the shared object file
+so_file_path = os.path.abspath('100-operations.so')
+
+# Load the shared object file
+cops = ctypes.CDLL(so_file_path)
+
+# Rest of the script remains the same
 a = random.randint(-111, 111)
 b = random.randint(-111, 111)
 print("{} + {} = {}".format(a, b, cops.add(a, b)))
