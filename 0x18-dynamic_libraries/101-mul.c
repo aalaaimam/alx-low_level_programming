@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h> // Include this for malloc, free, and exit
 
 /**
 * _isdigit - checks if character is digit

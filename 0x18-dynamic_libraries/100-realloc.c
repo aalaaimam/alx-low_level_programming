@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stddef.h> // Include this for NULL
+#include <stdlib.h> // Include this for malloc and free
 
 /**
 * *_realloc - allocates a memory block using malloc and free.

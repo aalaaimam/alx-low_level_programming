@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stddef.h> // Include this for NULL
+#include <stdlib.h> // Include this for malloc
 
 /**
 * _calloc - allocates memory for an array, initialized to 0

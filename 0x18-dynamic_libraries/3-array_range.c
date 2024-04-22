@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stddef.h> // Include this for NULL
+#include <stdlib.h> // Include this for malloc
 
 /**
 * array_range - creates an array of integers
